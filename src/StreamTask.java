@@ -11,8 +11,10 @@ public class StreamTask {
     }
 
     public static int[] getSortedOddsArray(int[] numbers) {
-        int[] sortedOddsArray = Arrays.stream(numbers).filter(x -> x % 2 != 0).sorted().toArray();
-        // TODO replace return with your code
+        int[] sortedOddsArray = Arrays.stream(numbers)
+                .filter(x -> x % 2 != 0)
+                .sorted()
+                .toArray();
         return sortedOddsArray;
     }
 }
